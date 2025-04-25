@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+
     
 </head>
 <body>
-    <header>
-        <!-- <nav>
-            <ul class = "menu">
-                <li><a href="#contenedorAcercaDeMi">About Me</a></li>
-                <li><a href="#servicios">Habilidades</a></li>
-                <li><a href="#contacto">Proyectos</a></li>
-              </ul>
-        </nav> -->
-    </header>
+
     <main class = 'contenedorPrincipal'>
         <div id="contenedorInformacion">
             <section>
@@ -25,23 +22,32 @@
             </section>
             <section>
                 <img src="../images/foto_perfil.jpeg" alt="Foto de perfil" style="border-radius: 200px; width: 260px; height: auto;">
-
             </section>
         </div>
         <section id="redes">
-            <img src="../images/facebook.png" alt="logo de facebook" width="40px" height="40px">
-            <img  src="../images/instagram.png" alt="logo de facebook" width="40px" height="40px">
-            <img  src="../images/github.png" alt="logo de facebook" width="40px" height="40px">
+            <a href="https://www.facebook.com/jonathan.jaguaco.5/" target="_blank">
+                <img src="../images/facebook.png" alt="logo de facebook" width="40px" height="40px">
+            </a>
+            <a href="https://www.instagram.com/javier.xssj/" target="_blank">
+                <img src="../images/instagram.png" alt="logo de instagram" width="40px" height="40px">
+            </a>
+            <a href="https://github.com/JonathanJQ03" target="_blank">
+                <img src="../images/github.png" alt="logo de github" width="40px" height="40px">
+            </a>
         </section>
+        
         <div class = 'contenedorAcercaDeMi'>
             <h3>Acerca de mí</h3>
-            <p>¡Hola! Soy Jonathan Jaguaco, estudiante de Ingeniería de Software con muchas ganas de seguir aprendiendo.</p>
-            <p>Este sitio es una pequeña muestra de lo que me gusta hacer: crear, programar y compartir lo que aprendo. Aquí puedes ver mis proyectos, mis habilidades y seguirme en redes para más contenido ✨</p>
+            <p>
+                ¡Hola! Soy Jonathan Jaguaco, estudiante de Ingeniería de Software con muchas ganas de seguir aprendiendo. Este sitio es una pequeña muestra de lo que me gusta hacer: crear, programar y compartir lo que aprendo. Aquí puedes ver mis proyectos, mis habilidades y redes sociales, todo en un solo lugar. 
+            </p>
+            
         </div>
 
         <center>
-            <h3>Habilidades</h3>
-        <p>Nivel de conocimiento: </p>
+            <h1>Habilidades</h1>
+            <p class="nivel-conocimiento">Nivel de conocimiento:</p>
+
         <br><p id = barra> Básico</p>
         </center>
         <div class = 'contenedorHabilidades'>
@@ -49,17 +55,39 @@
             <section id = 'habilidad2'> CSS</section>
             <section id = 'habilidad3'>JavaScript</section>
         </div>
-        <h3>Proyectos</h3>
-        <div class = 'contenedorProyectos'>
-            
-            <section> Proyecto 1 </section>
-            <section> Proyecto 2</section>
-            <section>Proyecto 3</section>
+        <center><h1>Proyectos</h1></center>
+        <div class="contenedorProyectos">
+            <section class="proyecto">
+                <img src="../images/asp_net.png" alt="Proyecto ASP.NET">
+                <a class="github-btn" href="https://github.com/JonathanJQ03/SistemadeGesti-nHospitalariaWebProyecto.git" target="_blank">
+                    <img src="../images/github.png" alt="GitHub">
+                </a>
+            </section>
+            <section class="proyecto">
+                <img src="../images/pizzeria_java.jpg" alt="Proyecto Java">
+                <a class="github-btn" href="https://github.com/MGPOO/Pythons.git" target="_blank">
+                    <img src="../images/github.png" alt="GitHub">
+                </a>
+            </section>
+            <section class="proyecto">
+                <img src="../images/python_proyecto.jpg" alt="Proyecto Python">
+                <a class="github-btn" href="https://github.com/JonathanJQ03/Computacion-Paralela.git" target="_blank">
+                    <img src="../images/github.png" alt="GitHub">
+                </a>
+            </section>
+        </div>
+        <div class = 'nombresProyectos'>
+
+                <h3>Proyecto .Net</h3>
+                <h3>Pizzeria Java</h3>
+                <h3>Señales de Audio con Paralelismo</h3>
+
         </div>
     </main>
     
     <footer>
         <p>Jonathan Jaguaco - Desarrollo Web Avanzado : 23266</p>
     </footer>
+
 </body>
 </html>
