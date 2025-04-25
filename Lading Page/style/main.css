@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+}
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 45px
+}
+
+.menu{
+    display: flex; /* Los elementos <li> se alinean horizontalmente */
+    justify-content: space-evenly; /* Centra los elementos dentro del contenedor */
+    height: 38px;
+}
+
+#contenedorInformacion {
+    display: flex; /* Aquí también debes asegurarte de que el contenedor use flex */
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 120px;
+    background-image: url(../images/fondo_programacion.jpg);
+    min-height: 380px;
+    color: white; 
+    font-size: xx-large;
+
+}
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+    margin-top: 0;
+}
+
+.contenedorAcercaDeMi {
+    text-align: center;
+}
+
+.contenedorHabilidades{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contenedorHabilidades > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+.contenedorHabilidades > section:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    transition: transform 0.6s ease-in-out; /* Hace el efecto más suave con una duración de 0.6 segundos */
+}
+
+
+#barra{
+    background-color: rgb(31, 189, 31);
+    height: 20px;
+    width: 40%;
+    border-radius: 30px;
+    
+}
+#habilidad1{
+    background-color: rgb(227, 76, 38);
+    height: 150px;
+}
+#habilidad2{
+    background-color: rgb(38, 77, 228);
+    height: 150px;
+}
+#habilidad3{
+    background-color: rgb(247, 223, 30);
+    height: 150px;
+}
+.contenedorProyectos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.contenedorProyectos > section{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    border: #433d3d 1px solid;
+    
+}
